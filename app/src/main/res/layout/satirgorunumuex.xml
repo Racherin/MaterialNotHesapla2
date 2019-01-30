@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/myLinear"
+        >
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 xmlns:tools="http://schemas.android.com/tools"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="56dp"
+    >
+        <TextView
+                android:text="Ders :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text1"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+
+                app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintEnd_toStartOf="@+id/satirDersAdi"/>
+
+        <TextView
+                android:text="Matematik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/satirDersAdi"
+                android:textColor="@color/black"
+
+                app:layout_constraintStart_toEndOf="@+id/text1"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintEnd_toStartOf="@+id/text2"/>
+        <TextView
+                android:text="Saat :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text2"
+                android:textColor="@color/black"
+
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@+id/satirDersAdi"
+                android:layout_marginStart="32dp" app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintEnd_toStartOf="@+id/satirDersSaati"/>
+        <TextView
+                android:text="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/satirDersSaati"
+                android:textColor="@color/black"
+
+                app:layout_constraintStart_toEndOf="@+id/text2"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/text3"/>
+        <TextView
+                android:text="Puan :"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+
+                android:layout_height="wrap_content"
+                android:id="@+id/text3"
+                app:layout_constraintStart_toEndOf="@+id/satirDersSaati"
+                android:layout_marginStart="32dp" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/satirPuan"/>
+        <TextView
+                android:text="15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/satirPuan"
+                android:textColor="@color/black"
+
+                app:layout_constraintStart_toEndOf="@+id/text3"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/button_deleteItem"/>
+        <Button
+                android:layout_width="20dp" android:layout_height="20dp"
+                android:layout_weight="0"
+                android:layout_gravity="center"
+                android:id="@+id/button_deleteItem"
+                android:background="@drawable/ic_cancel_white"
+                app:layout_constraintBaseline_toBaselineOf="@+id/satirPuan"
+                app:layout_constraintStart_toEndOf="@+id/satirPuan" android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"/>
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        android:layout_marginStart="8dp" android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"/>
+    </android.support.constraint.ConstraintLayout>
+</RelativeLayout>

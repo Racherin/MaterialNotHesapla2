@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                android:id="@+id/myLinear"
+                android:background="@android:color/white"
+                android:layout_height="56dp">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+
+                                             android:layout_height="56dp"
+
+android:orientation="horizontal">
+
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:text="Ders Adı:"
+              android:layout_gravity="center"
+              android:layout_weight="1"
+              android:layout_marginLeft="12dp"
+              android:id="@+id/text1"
+              android:textColor="@color/black"
+    />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="Matematik"
+              android:layout_gravity="center"
+              android:layout_weight="1"
+              android:layout_marginLeft="-25dp"
+              android:id="@+id/satirDersAdi"
+              android:textColor="@color/black"
+    />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="Saat:"
+              android:layout_gravity="center"
+              android:layout_weight="1"
+              android:id="@+id/text2"
+              android:layout_marginLeft="20dp"
+              android:textColor="@color/black"
+
+    />    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="1"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:id="@+id/satirDersSaati"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="-18dp"
+
+
+/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="Puan:"
+              android:layout_gravity="center"
+              android:layout_weight="1"
+              android:id="@+id/text3"
+              android:textColor="@color/black"
+
+    />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="56"
+              android:layout_gravity="center"
+              android:layout_weight="1"
+              android:id="@+id/satirPuan"
+              android:layout_marginLeft="-18dp"
+              android:textColor="@color/black"
+
+    />
+    <Button android:layout_width="20dp" android:layout_height="20dp"
+            android:layout_weight="0"
+            android:layout_gravity="center"
+            android:layout_marginRight="18dp"
+            android:id="@+id/button_deleteItem"
+    android:background="@drawable/ic_cancel_white"/>
+</LinearLayout></RelativeLayout>
