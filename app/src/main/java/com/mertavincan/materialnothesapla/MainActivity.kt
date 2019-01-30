@@ -35,9 +35,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        MobileAds.initialize(this, "ca-app-pub-4579368401268630~5492357846")
-        var adrequest=AdRequest.Builder().build()
-        adView.loadAd(adrequest)
+        
 
         editText_dersPuaniGiris.setText("")
         if(rootLayout.childCount == 0){
